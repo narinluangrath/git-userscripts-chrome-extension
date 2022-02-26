@@ -1,0 +1,15 @@
+{
+  "name": "git-userscripts-chrome-extension",
+  "version": "0.0.0",
+  "description": "Git-based Userscripts Manager",
+  "author": "Narin Luangrath <narin.luangrath@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/chrome": "^0.0.179",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
