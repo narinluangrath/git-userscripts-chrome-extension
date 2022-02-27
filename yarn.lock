@@ -3270,6 +3270,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+use-chrome-storage@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/use-chrome-storage/-/use-chrome-storage-1.0.6.tgz#cc4b2239ad9358da7becd7ef7675405eb1ac0deb"
+  integrity sha512-nOsPhYpqCTSAluXL+mCUsWq1M4g8648EromgGiWGXnoVp1LBkWJZcT8z10y8Axyp0IMYJlXkMd5yrHRxx+RmFg==
+
 util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
