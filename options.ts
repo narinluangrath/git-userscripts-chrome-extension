@@ -1,3 +1,15 @@
+import "./button.css";
+
+const button = document.createElement("div");
+button.id = "buttonDiv";
+document.body.appendChild(button);
+
+const div = document.createElement("div");
+const p = document.createElement("p");
+p.innerText = "Choose a different background color!";
+div.appendChild(p);
+document.body.appendChild(div);
+
 let page = document.getElementById("buttonDiv");
 let selectedClassName = "current";
 const presetButtonColors = ["#3aa757", "#e8453c", "#f9bb2d", "#4688f1"];

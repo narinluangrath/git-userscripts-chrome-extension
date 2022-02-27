@@ -1,4 +1,10 @@
-// Initialize butotn with users's prefered color
+import "./button.css";
+
+// Initialize button with users's prefered color
+const button = document.createElement("button");
+button.id = "changeColor";
+document.body.appendChild(button);
+
 const changeColor = document.getElementById("changeColor");
 
 chrome.storage.sync.get("color", ({ color }) => {
