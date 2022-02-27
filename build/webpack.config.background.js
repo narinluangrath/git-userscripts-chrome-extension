@@ -3,6 +3,7 @@ const webpackCommon = require('./webpack.config.common');
 module.exports = {
   ...webpackCommon,
   entry: {
-    options: './options.ts'
+    background: './src/background.ts'
   },
+  plugins: []
 }

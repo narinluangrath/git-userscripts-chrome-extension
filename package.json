@@ -16,6 +16,6 @@
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "build": "rm -rf ./dist/* && webpack --config ./webpack.config.options.js && webpack --config ./webpack.config.popup.js && webpack --config ./webpack.config.background.js && cp -r images manifest.json dist"
+    "build": "bash ./build/index.sh"
   }
 }
