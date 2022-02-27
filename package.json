@@ -6,19 +6,24 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@testing-library/react-hooks": "^7.0.2",
     "@types/chrome": "^0.0.179",
+    "@types/jest": "^27.4.1",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "css-loader": "^6.6.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
     "style-loader": "^3.3.1",
+    "ts-jest": "^27.1.3",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.5",
     "webpack": "^5.69.1",
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
-    "build": "bash ./build/index.sh"
+    "build": "bash ./build/index.sh",
+    "test": "jest src"
   },
   "dependencies": {
     "react": "^17.0.2",
