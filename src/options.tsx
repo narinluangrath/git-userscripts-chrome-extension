@@ -8,12 +8,7 @@ function Options() {
   const [inputValue, setInputValue] = React.useState('');
   const [gitUrl, setGitUrl, isPersistent, error] = useChromeStorageLocal('gitUrl', '');
 
-  React.useEffect(() => {
-    chrome.runtime.sendMessage(
-      'Options page sent a message!',
-      res => console.log('From Options', res)
-    );
-  }, [])
+  const handleButtonClick = () => chrome.runtime.sendMessage('Options page sent a message!');
 
   return (
     <div>
@@ -21,6 +16,7 @@ function Options() {
       <form onSubmit={() => setGitUrl(inputValue)}>
         <input value={inputValue} onChange={e => setInputValue(e.target.value)} />
       </form>
+      <button onClick={handleButtonClick}>Trigger Message</button>
     </div>
   );
 }
