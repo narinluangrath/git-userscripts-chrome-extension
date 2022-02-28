@@ -1,1 +1,1 @@
-chrome.runtime.sendMessage('Page Loaded')
+chrome.runtime.sendMessage('content-script sent a message!')

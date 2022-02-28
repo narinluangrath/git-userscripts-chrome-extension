@@ -8,6 +8,13 @@ function Options() {
   const [inputValue, setInputValue] = React.useState('');
   const [gitUrl, setGitUrl, isPersistent, error] = useChromeStorageLocal('gitUrl', '');
 
+  React.useEffect(() => {
+    chrome.runtime.sendMessage(
+      'Options page sent a message!',
+      res => console.log('From Options', res)
+    );
+  }, [])
+
   return (
     <div>
       <p>{JSON.stringify({ gitUrl, isPersistent, error })}</p>
